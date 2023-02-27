@@ -1,3 +1,5 @@
+#Password generator
+#importing random
 import random
 
 uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWYZ"
@@ -6,7 +8,6 @@ numbers = "0123456789"
 symbols = "(){},;:.-/\\?+*#$@&*'%"
 
 upper, lower, nums, syms = True, True, True, True
-
 
 all = ""
 
@@ -19,9 +20,9 @@ if nums:
 if syms:
     all += symbols
 
-length = 10
-amount = 10
+amount = int(input("How many password would you like:"))
+length = int(input("What length would you like your password to be:"))
 
 for x in range(amount):
     password = "".join(random.sample(all, length))
-    print(password)
+    print("Here is your passwords : " + password)
