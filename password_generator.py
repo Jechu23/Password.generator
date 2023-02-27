@@ -3,9 +3,10 @@ import random
 uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWYZ"
 lowercase_letters = uppercase_letters.lower()
 numbers = "0123456789"
-symbols = "(){},;:.-/\\?+*#$@&*"
+symbols = "(){},;:.-/\\?+*#$@&*'%"
 
-upper, lower, nums, syms = True, True, True,True
+upper, lower, nums, syms = True, True, True, True
+
 
 all = ""
 
